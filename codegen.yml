@@ -1,9 +1,8 @@
 overwrite: true
 generates:
-  ./types.ts:
+  /Users/nancy/github/cognite/graphql-client/src/types.tsx:
     schema: http://localhost:4000/graphql
-    documents: "./operations.graphql"
+    documents: operations.graphql
     plugins:
       - typescript
-      - typescript-operations
-      - typescript-resolvers
+      - typescript-react-apollo
