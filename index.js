@@ -18,7 +18,6 @@ const typeDefs = gql`
 
   type Query {
     Books: [Book]
-    Authors: [Author]
   }
 
   type Mutation {
@@ -51,7 +50,6 @@ var authors = [
 const resolvers = {
    Query: {
       Books: () => books,
-      Authors: () => authors,
    },
    Mutation: {
       addBook: (_, {title, author}) => {
