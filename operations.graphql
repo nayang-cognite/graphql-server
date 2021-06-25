@@ -6,8 +6,8 @@ query GetBooks {
 }
 
 mutation AddBook($title:String!, $author:String!) {
-   addbook(title: $title, author: $author) {
-      title
-      author
+  addBook(title:$title, author:$author) {
+    title
+    author
    }
 }
